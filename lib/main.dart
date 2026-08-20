@@ -6,7 +6,7 @@ void main() async {
 }
 
 class ShapcClinicApp extends StatelessWidget {
-  const ShapcClinicApp({Key? key}) : super(key: key);
+  const ShapcClinicApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class ShapcClinicApp extends StatelessWidget {
 
 // Temporary fallback placeholder screen jab tak aapki main screen link ho
 class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({Key? key}) : super(key: key);
+  const DashboardScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
