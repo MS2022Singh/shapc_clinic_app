@@ -72,7 +72,7 @@ class _MainLayoutState extends State<MainLayout> {
         backgroundColor: Color(0xFF2C5282),
         elevation: 2,
         title: Text(
-          'SHAPC Secure Vault — Clinical System v1.4.0',
+          'SHAPC Secure Vault â€” Clinical System v1.4.0',
           style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
         ),
         actions: [
