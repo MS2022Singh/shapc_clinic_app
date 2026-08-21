@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/material.dart';
 
 class DoctorProfile {
   static String name = "Dr. Poonam Sharma";
@@ -23,7 +24,6 @@ class FileExportHandler {
     return await file.writeAsString(data);
   }
 }
-import 'package:flutter/material.dart';
 
 void main() {
   runApp(ShapcClinicApp());
@@ -72,7 +72,7 @@ class _MainLayoutState extends State<MainLayout> {
         backgroundColor: Color(0xFF2C5282),
         elevation: 2,
         title: Text(
-          'SHAPC Secure Vault â€” Clinical System v1.4.0',
+          'SHAPC Secure Vault Ã¢â‚¬â€ Clinical System v1.4.0',
           style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
         ),
         actions: [
@@ -903,5 +903,4 @@ class ReportsScreen extends StatelessWidget {
     );
   }
 }
-
 
