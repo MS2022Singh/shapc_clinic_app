@@ -1,3 +1,28 @@
+import 'dart:io';
+
+class DoctorProfile {
+  static String name = "Dr. Poonam Sharma";
+  static String regNo = "79492";
+  static String clinicName = "SHAPC Health Center";
+  static String address = "BHEL RECHS Wing, Main Clinic Complex";
+  static String phone = "+91 98765 43210";
+}
+
+class FileExportHandler {
+  static Future<String> getDownloadsPath() async {
+    if (Platform.isWindows) {
+      final userProfile = Platform.environment['USERPROFILE'];
+      return '\\Downloads';
+    }
+    return '/storage/emulated/0/Download';
+  }
+
+  static Future<File> exportData(String fileName, String data) async {
+    final path = await getDownloadsPath();
+    final file = File('\\');
+    return await file.writeAsString(data);
+  }
+}
 import 'package:flutter/material.dart';
 
 void main() {
